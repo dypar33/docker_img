@@ -49,3 +49,4 @@ RUN ln -s /root/RSHack/rshack.py /usr/bin/rshack
 RUN mkdir workspace
 WORKDIR /root/workspace/
 CMD ["/bin/zsh"]
+# CMD ["tail", "-f", "/dev/null"]
