@@ -40,8 +40,8 @@ RUN gem install one_gadget
 
 RUN git clone https://github.com/longld/peda.git ~/peda
 RUN git clone https://github.com/scwuaptx/Pwngdb.git
-RUN git clone https://github.com/hugsy/gef.git ~/gef
-RUN echo "source ~/gef/gef.py" >> ~/.gdbinit
+RUN echo "# source ~/peda/peda.py" >> ~/.gdbinit
+RUN bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
 
 RUN git clone https://github.com/zweisamkeit/RSHack.git
 RUN ln -s /root/RSHack/rshack.py /usr/bin/rshack
